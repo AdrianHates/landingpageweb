@@ -1,0 +1,60 @@
+.inicio {
+  width: 100%;
+  height: 115vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Rubik';
+  background: url("https://d33wubrfki0l68.cloudfront.net/5c71bc45356f2b550ac87b19eb115007e5b0953b/78d8d/static/waves_violet-37d9022b34fe32b9a566104ee1b0b8e9.jpg") no-repeat center center;
+  background-size: cover;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    > div {
+      text-align: center;
+      background: linear-gradient(75deg, #FF4C6C, #FA9D4D 80%);
+      font-size: 92px;
+      font-family: 'Montserrat', sans-serif;    
+      font-weight: 700;
+      height: 210px;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;    
+    }
+    > p {
+      color: white;
+      font-size: 18px;
+    }
+    > button {
+      font-family: "Rubik", sans-serif;
+      line-height: 1;
+      font-size: 15.5px;
+      font-weight: 500;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 3px;
+      animation: pulse-blue 2s infinite
+    }
+  }
+  
+}
+
+@keyframes pulse-blue {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(86, 52, 230, 0.7);
+}
+70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 30px rgba(26, 51, 244, 0);
+}
+100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(26, 51, 244, 0);
+}
+}
+

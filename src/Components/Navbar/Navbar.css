@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;  
+  background-color: transparent;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  color: white;
+  > div {
+    gap: 1.5rem;
+    display: flex;
+    > div {
+      cursor: pointer;
+      font-weight: 500;
+      font-family: 'Rubik';
+        &:hover {
+        color:coral
+      }
+    }    
+  }
+  > a {
+    &:hover {
+      color:coral
+    }
+  }
+}
