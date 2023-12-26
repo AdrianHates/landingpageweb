@@ -2,7 +2,7 @@ import './Columns.css'
 
 export default function Columns ( { object } ) {
   return(
-    <section className='columns'>
+    <section className='columns' style={{ }}>
       {
         object && object.map((x, i) => <div key={i}>
           <img alt={i} src={x.src} />

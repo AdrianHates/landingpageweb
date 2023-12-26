@@ -5,6 +5,9 @@ import Inicio from './Components/Inicio/Inicio'
 import Columns from './Components/Columns/Columns'
 import BubbleWrap from './Components/BubbleWrap/BubbleWrap'
 import Post from './Components/Post/Post'
+import PostSecond from './Components/PostSecond/PostSecond'
+import ColumnsDates from './Components/ColumnsDates/ColumnsDates'
+import Form from './Components/Form/Form'
 
 const navbar = {
   logo:'',
@@ -20,7 +23,7 @@ const navbar = {
 }
 
 const inicio = {
-  textoTipificado: ['Página Web', 'Campaña', 'Camina al Éxito', 'Tienda Online'],
+  textoTipificado: ['Página Web', 'Campaña', 'Camino al Éxito', 'Tienda Online'],
   p: '¿Deseas contar con la página web, tienda online y campañas que te ayuden a Incrementar tus Ventas?',
   button: 'CONTÁCTANOS AQUI',
 }
@@ -43,7 +46,59 @@ const columns = [
   }
 ]
 
+const post = {
+  h4: 'CREAMOS TU CAMINO AL ÉXITO',
+  h2:'Más de 10 Años y 200 Clientes',
+  h3:'Diseñamos el Sitio Web que necesitas',
+  p: 'Contamos con la experiencia y los profesionales más capacitados para brindarte un servicio integral de Marketing Digital y Diseño Web que te permita diferenciarte en el mercado.',
+  button: 'NOSOTROS'
+}
+const postSecond = {
+  url: 'https://digitalmarketing.pe/wp-content/uploads/2022/06/agencia-digital-marketing-diseno-de-paginas-web.png',
+  img: 'https://digitalmarketing.pe/wp-content/uploads/2020/11/work-together.png',
+  h1: 'Trabajemos juntos',
+  p: 'Deseas saber lo necesario para potenciar tu negocio en el menor tiempo posible con tu web?',
+  email: 'INFO@DIGITALMARKETING.PE',
+  phone: '987 445 450',
+  button: 'CONTÁCTANOS'
+  
+}
+
+const columnsDates = [
+  {
+    valor: 215,
+    title: 'Clientes',
+    type: 'number',
+    color: 'blue'
+  },
+  {
+    valor: 100,
+    title: 'Satisfacción',
+    type: '%',
+    color: 'gold'
+  },
+  {
+    valor: 99,
+    type: '%',
+    title: 'Experiencia',
+    color: 'green'
+  },
+  {
+    valor: 98,
+    type: '%',
+    title: 'Metas',
+    color: 'red'
+  }
+]
+
+const form = {
+  url: 'https://livewp.site/wp/md/ewebot/wp-content/uploads/sites/64/2020/11/home9_bottom_vawe.png',
+  question: 'Solicitanos una Asesoría?',
+  text: 'Deseamos ser parte de tu éxito y apoyarte a crecer tu negocio. Esperamos tu contacto para poder escucharte.'
+}
+
 const bubbleWrap = true
+
 function App() {
 
   return (
@@ -54,7 +109,10 @@ function App() {
       <main>
         <Inicio object={inicio} />
         <Columns object={columns} />
-        <Post />
+        <Post object={post} />
+        <PostSecond object={postSecond} />
+        <ColumnsDates object={columnsDates} />
+        <Form object={form} />
       </main>
       <WS />
       <BubbleWrap object={bubbleWrap} />

@@ -1,5 +1,5 @@
 .bubble-wrap > div {
-  position: absolute;
+  position: fixed;
   width: 5px;
   height: 5px;
   border-radius: 50%;

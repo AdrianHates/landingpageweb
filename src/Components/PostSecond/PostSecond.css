@@ -1,0 +1,49 @@
+.post-second {
+  display: flex;
+  padding: 100px 5rem;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  > div {
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 30ch;
+    font-family: 'Rubik';
+    > div {
+      width: 10ch;
+      background: linear-gradient(75deg, #FF4C6C, #FA9D4D 80%);
+      font-size: 50px;
+      font-family: 'Montserrat', sans-serif;    
+      font-weight: 700;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    
+    }
+    > p {
+      color: gray;
+      line-height: 1.5;
+      font-size: 18px;
+      
+    }
+    > a {
+      font-size: 25px;
+      font-weight: 600;
+      &:hover {
+        color: rgb(63, 63, 63)
+      }
+    }
+    > button {
+      background-color: #FC7D59;
+      color: white;
+      &:hover {
+        background-color:#FE5C65;
+
+      }
+    }
+  }
+  > img {
+    width: 70%;
+  }
+}

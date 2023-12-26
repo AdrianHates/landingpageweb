@@ -37,24 +37,14 @@
       padding: 12px 24px;
       border: none;
       border-radius: 3px;
-      animation: pulse-blue 2s infinite
+      animation: pulse-blue 2s infinite;
+      &:hover {
+        background-color: rgba(86, 52, 230, 0.7);
+        color: white;
+      }
     }
   }
   
 }
 
-@keyframes pulse-blue {
-  0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(86, 52, 230, 0.7);
-}
-70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 30px rgba(26, 51, 244, 0);
-}
-100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(26, 51, 244, 0);
-}
-}
 
