@@ -48,33 +48,33 @@ export default function Form ( { object } ) {
   return(
     <section className='form' style={{backgroundImage:`url(${object.url})`}}>
       <div>
+        <img alt='pointed' src='https://digitalmarketing.pe/wp-content/uploads/2020/11/contact_icon-white.png' />
         <p>{object.question}</p>
         <p>{object.text}</p>
       </div>
       <form onSubmit={handleSubmit}>
       <label>
-        Nombre:
-        <input type="text" name="nombre" value={nombre} onChange={handleInputChange} />
+        <input placeholder='Tu nombre' type="text" name="nombre" value={nombre} onChange={handleInputChange} />
       </label>
       <label>
-        Email:
-        <input type="email" name="email" value={email} onChange={handleInputChange} />
+        
+        <input placeholder='Email' type="email" name="email" value={email} onChange={handleInputChange} />
       </label>
       <label>
-        Teléfono:
-        <input type="tel" name="telefono" value={telefono} onChange={handleInputChange} />
+        <input placeholder='Teléfono' type="tel" name="telefono" value={telefono} onChange={handleInputChange} />
       </label>
       <label>
-        Asunto:
-        <input type="text" name="asunto" value={asunto} onChange={handleInputChange} />
+        <input placeholder='Asunto' type="text" name="asunto" value={asunto} onChange={handleInputChange} />
       </label>
       <label>
-        Mensaje:
-        <textarea name="mensaje" value={mensaje} onChange={handleInputChange} />
+        <textarea placeholder='Mensaje' name="mensaje" value={mensaje} onChange={handleInputChange} />
       </label>
       <div>
-      Declaro que he leído la Política de Tratamiento de Datos
-      <button>Enviar</button>
+        <label>
+        <input type='checkbox' required /> Declaro que he leído la <a href='#'>Política de Tratamiento de Datos</a>
+
+        </label>
+      <button className='button-design-01'>Enviar</button>
       </div>
 
     </form>

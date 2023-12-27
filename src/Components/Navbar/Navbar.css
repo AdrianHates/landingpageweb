@@ -7,7 +7,6 @@ nav {
   width: 100%;
   position: fixed;
   top: 0;
-  color: white;
   > div {
     gap: 1.5rem;
     display: flex;

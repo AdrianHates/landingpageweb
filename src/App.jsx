@@ -8,6 +8,7 @@ import Post from './Components/Post/Post'
 import PostSecond from './Components/PostSecond/PostSecond'
 import ColumnsDates from './Components/ColumnsDates/ColumnsDates'
 import Form from './Components/Form/Form'
+import Footer from './Components/Footer/Footer'
 
 const navbar = {
   logo:'',
@@ -96,16 +97,19 @@ const form = {
   question: 'Solicitanos una Asesoría?',
   text: 'Deseamos ser parte de tu éxito y apoyarte a crecer tu negocio. Esperamos tu contacto para poder escucharte.'
 }
-
+const footer = {
+  phone: '987 445 450',
+  email: 'herlessoliverramosespinoza@gmail.com',
+  address: 'Lima, Perú',
+  description: '© 2023 — Developer Freelance - Perú - Herless Ramos'
+}
 const bubbleWrap = true
 
 function App() {
 
   return (
     <>
-      <header>
-        <Navbar object={navbar} />
-      </header>
+      <Navbar object={navbar} />
       <main>
         <Inicio object={inicio} />
         <Columns object={columns} />
@@ -116,6 +120,8 @@ function App() {
       </main>
       <WS />
       <BubbleWrap object={bubbleWrap} />
+      <Footer object={footer} />
+
     </>
   )
 }
