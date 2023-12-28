@@ -13,13 +13,27 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    > img {
-      margin: -40px 0;
-      width: 100px;
-      height: 100px;
-      transition: scale .3s ease-in-out;
-      &:hover {
-        scale: 1.3;
+    > div {
+      position: relative;
+      
+      > img {
+        margin: -70px 0;
+        width: 175px;
+        height: 175px;
+        transition: scale .3s ease-in-out;
+        margin-bottom: 0;
+        &:hover {
+          scale: 1.2;
+        }        
+      }
+      > div {
+        position: absolute;
+        top: -25px;
+        left: 55px;
+        color: white;
+        font-size: 40px;
+        font-weight: 600;
+        font-family: 'Rubik';
       }
     }
     > h3 {
@@ -27,10 +41,16 @@
     }
     > p {
       font-family: 'Rubik';
-      color: gray
+      color: gray;
+      width: 29ch;
     }
     > a {
       padding: 20px 0 50px;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: #6B5EE9;
+      font-family: 'Rubik';
       &:hover {
         color: chocolate;
       }

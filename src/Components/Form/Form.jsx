@@ -46,7 +46,7 @@ export default function Form ( { object } ) {
   };
 
   return(
-    <section className='form' style={{backgroundImage:`url(${object.url})`}}>
+    <section className='form' id='contactanos' style={{backgroundImage:`url(${object.url})`}}>
       <div>
         <img alt='pointed' src='https://digitalmarketing.pe/wp-content/uploads/2020/11/contact_icon-white.png' />
         <p>{object.question}</p>

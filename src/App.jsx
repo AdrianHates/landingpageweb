@@ -11,14 +11,23 @@ import Form from './Components/Form/Form'
 import Footer from './Components/Footer/Footer'
 
 const navbar = {
-  logo:'',
+  logo:'https://dewey.tailorbrands.com/production/brand_version_mockup_image/527/8762209527_6915d43b-bf1a-47ba-a930-12a0c3357705.png?cb=1703753565',
   list: [
-    'Inicio',
-    'Nosotros',   
-    'Servicios',   
-    'Proyectos',   
-    'Testimonios',   
-    'Contactanos'
+    {
+      element: 'Inicio',
+      href: 'inicio'
+    },
+    //'Nosotros',   
+    {
+      element:    'Servicios',   
+      href: 'servicios'
+    },
+    //'Proyectos',   
+    //'Testimonios',   
+    {
+      element: 'Contactanos',
+      href:'contactanos'
+    }
   ],
   contact: 'Llámanos: 987445450'
 }
@@ -33,16 +42,19 @@ const columns = [
   {
     src: 'https://digitalmarketing.pe/wp-content/uploads/2020/11/SEO-Consultancy.png',
     h3: 'Diseño de Páginas Web',
+    href: '51914315964',
     p:'Diseñamos Páginas Web integrales con enfoque comercial para diferenciarte en el mercado.'
   },
   {
-    src: 'https://digitalmarketing.pe/wp-content/uploads/2020/11/SEO-Consultancy.png',
+    src: 'https://digitalmarketing.pe/wp-content/uploads/2020/11/Competitor-Analysis.png',
     h3: 'Diseño de Tiendas Online',
+    href: '51914315964',
     p: 'Nos enfocamos en brindarte el mejor servicio de creación de tiendas online, virtuales o ecommerce.'
   },
   {
-    src: 'https://digitalmarketing.pe/wp-content/uploads/2020/11/SEO-Consultancy.png',
+    src: 'https://digitalmarketing.pe/wp-content/uploads/2020/11/Social-Media-Marketing.png',
     h3: 'Campañas Digitales',
+    href: '51914315964',
     p: 'Conocemos tu mercado y buscamos mejorar tu presencia con tus futuros clientes.'
   }
 ]
@@ -59,8 +71,8 @@ const postSecond = {
   img: 'https://digitalmarketing.pe/wp-content/uploads/2020/11/work-together.png',
   h1: 'Trabajemos juntos',
   p: 'Deseas saber lo necesario para potenciar tu negocio en el menor tiempo posible con tu web?',
-  email: 'INFO@DIGITALMARKETING.PE',
-  phone: '987 445 450',
+  email: 'kurono1807@gmail.com',
+  phone: '914 315 964',
   button: 'CONTÁCTANOS'
   
 }
@@ -98,11 +110,12 @@ const form = {
   text: 'Deseamos ser parte de tu éxito y apoyarte a crecer tu negocio. Esperamos tu contacto para poder escucharte.'
 }
 const footer = {
-  phone: '987 445 450',
-  email: 'herlessoliverramosespinoza@gmail.com',
+  phone: '914 315 964',
+  email: 'kurono1807@gmail.com',
   address: 'Lima, Perú',
   description: '© 2023 — Developer Freelance - Perú - Herless Ramos'
 }
+const wS = '51914315964'
 const bubbleWrap = true
 
 function App() {
@@ -118,7 +131,7 @@ function App() {
         <ColumnsDates object={columnsDates} />
         <Form object={form} />
       </main>
-      <WS />
+      <WS object={wS} />
       <BubbleWrap object={bubbleWrap} />
       <Footer object={footer} />
 

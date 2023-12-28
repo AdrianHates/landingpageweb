@@ -1,13 +1,13 @@
 .post {
   background-image: url('https://livewp.site/wp/md/ewebot/wp-content/uploads/sites/64/2020/11/home09_vawe-bg1.png');
   display: flex;
-  margin: 100px 10rem;
-  font-family: 'Rubik';
-  color: gray;
-  
+  margin: 100px 5rem;
+  font-family: 'Rubik',serif;
+  color: #696687;
   & > div:first-of-type {
     flex: 1 1;
     width: 50%;
+    padding: 0 4rem;
     > img {
       width: 100%;
     }
@@ -21,14 +21,16 @@
     letter-spacing: 1px;
     line-height: 1.3;
     > h4 {
-      color: black
+      color: #696687;
+
     }
     > h2 {
-      color: #696687;
+      color: #3b3663;
     }
     > h3 {
       font-weight: 550;
       font-size: 23px;
+      
     }
     > p {
       font-size: 18px;

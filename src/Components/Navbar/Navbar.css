@@ -3,23 +3,38 @@ nav {
   align-items: center;
   justify-content: space-around;  
   background-color: transparent;
-  height: 100px;
+  height: 75px;
   width: 100%;
   position: fixed;
   top: 0;
+  transition: background-color .3s ease-in-out, border-bottom .3s ease-in-out;
+  z-index: 1;
+  > img {
+    height: 75%;
+    filter: drop-shadow(1px 1px 2px white);
+
+  }
   > div {
     gap: 1.5rem;
     display: flex;
+    
     > div {
       cursor: pointer;
       font-weight: 500;
       font-family: 'Rubik';
+      > a {
+        text-decoration: none;
+        color: unset
+      }
         &:hover {
         color:coral
       }
     }    
   }
   > a {
+    cursor: pointer;
+      font-weight: 500;
+      font-family: 'Rubik';
     &:hover {
       color:coral
     }

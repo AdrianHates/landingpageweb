@@ -1,7 +1,7 @@
 import './WS.css'
-export default function WS () {
+export default function WS ( { object } ) {
   return(
-    <div className="WS">
+    <a href={`https://wa.me/+${object}`} target='_blank' rel='noreferrer' className="WS">
       <svg
   xmlns="http://www.w3.org/2000/svg"
   xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -47,6 +47,6 @@ export default function WS () {
     </g>
   </g>
 </svg>
-    </div>
+    </a>
   )
 }

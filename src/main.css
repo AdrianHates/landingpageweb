@@ -1,5 +1,6 @@
 :root {
-  
+  --fz-w: 20px;
+  scroll-behavior:smooth;
 }
 
 * {
@@ -7,6 +8,8 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+
 
 .buttonPulse {
   

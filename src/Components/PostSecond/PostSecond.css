@@ -8,12 +8,10 @@
     gap: 1.5rem;
     display: flex;
     flex-direction: column;
-    width: 30ch;
     font-family: 'Rubik';
     > div {
-      width: 10ch;
       background: linear-gradient(75deg, #FF4C6C, #FA9D4D 80%);
-      font-size: 50px;
+      font-size: 80px;
       font-family: 'Montserrat', sans-serif;    
       font-weight: 700;
       background-clip: text;
@@ -35,6 +33,7 @@
       }
     }
     > button {
+      align-self: start;
       background-color: #FC7D59;
       color: white;
       &:hover {

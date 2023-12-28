@@ -27,7 +27,8 @@ export default function Navbar ( { object } ) {
   
   return(
     <header>
-      <nav style={{color:isScrolled?'black':'white', backgroundColor:isScrolled?'white':'transparent'}}>
+      <nav style={{ borderBottom:isScrolled?'1px solid whitesmoke':'1px solid transparent',
+color:isScrolled?'black':'white', backgroundColor:isScrolled?'white':'transparent'}}>
       {
         object && <img alt='logo' src={object.logo} />
 
@@ -35,7 +36,7 @@ export default function Navbar ( { object } ) {
       <div>
         {
           object && object.list.map((x,i)=> <div key={i}>
-            {x}
+            <a href={`#${x.href}`}>{x.element}</a>
           </div>
             )
         }

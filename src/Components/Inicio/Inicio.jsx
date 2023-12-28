@@ -12,7 +12,7 @@ export default function Inicio ( { object } ) {
       }
     }, [finishedTyping]);
     return(
-    <section className='inicio'>
+    <section className='inicio' id='inicio'>
       <div>
         {
           object && 
