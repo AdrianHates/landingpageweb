@@ -44,7 +44,10 @@ color:isScrolled?'black':'white', backgroundColor:isScrolled?'white':'transparen
       {
         object && <a>{object.contact}</a>
       }
+
     </nav>
+    <button>X</button>
+
     </header>
     
   )

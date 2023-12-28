@@ -57,3 +57,60 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .columns {
+    padding: 0 3rem;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit ,minmax(120px, 1fr));
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      > div {
+        position: relative;
+        
+        > img {
+          margin: -50px 0;
+          width: 120px;
+          height: 120px;
+          transition: scale .3s ease-in-out;
+          margin-bottom: 0;
+          &:hover {
+            scale: 1.2;
+          }        
+        }
+        > div {
+          position: absolute;
+          top: -15px;
+          left: 45px;
+          color: white;
+          font-size: 20px;
+          font-weight: 600;
+          font-family: 'Rubik';
+        }
+      }
+      > h3 {
+        font-family: 'Rubik';
+      }
+      > p {
+        font-family: 'Rubik';
+        color: gray;
+        width: 15ch;
+      }
+      > a {
+        padding: 20px 0 50px;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        color: #6B5EE9;
+        font-family: 'Rubik';
+        &:hover {
+          color: chocolate;
+        }
+      }
+    }
+  }
+}

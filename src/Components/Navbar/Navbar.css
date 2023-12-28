@@ -30,6 +30,7 @@ nav {
         color:coral
       }
     }    
+    
   }
   > a {
     cursor: pointer;
@@ -38,5 +39,27 @@ nav {
     &:hover {
       color:coral
     }
+  }
+  
+}
+
+header {
+  > button {
+    display: none;
+    background-color: orange;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    padding: 10px 15px;
+  } 
+}
+@media (max-width: 900px) {
+  header {
+    > button {
+      display: flex;
+    } 
+  }
+  nav {
+    display: none;
   }
 }

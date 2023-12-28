@@ -48,3 +48,18 @@
 }
 
 
+@media (max-width: 900px) {
+  .inicio {
+     
+    > div {
+      gap: 0rem;
+      > div {        
+        font-size: 70px;
+      }
+      > p {
+        padding: 4rem;
+        font-size: 18px;
+      }    
+    }    
+  }
+}
