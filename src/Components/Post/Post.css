@@ -55,3 +55,36 @@
   }
 }
 
+@media (max-width: 900px) {
+  .post {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    & > div:first-of-type {
+      width: 100%;
+      padding: 0 4rem;
+      > img {
+        width: 100%;
+      }
+    }
+    & > div:last-of-type {
+      
+      > h4 {
+  
+      }
+      > h2 {
+      }
+      > h3 {
+        
+      }
+      > p {
+        
+      }
+      > button {
+        
+        &:hover {
+        }
+      }
+    }
+  }
+}

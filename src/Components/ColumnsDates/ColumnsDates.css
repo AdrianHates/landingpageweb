@@ -32,3 +32,28 @@
   }
  } 
 }
+
+@media (max-width:1050px) {
+  .columns-dates {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: 'Rubik';
+    color: #3B3663;
+    
+   > div {
+    width: 100%;
+    > h1 {
+    }
+    > h3 {
+    }
+    > div {
+      
+      > div {
+      
+      }
+    }
+   } 
+  }
+  
+}
