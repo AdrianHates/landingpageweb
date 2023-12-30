@@ -1,8 +1,8 @@
 import './Columns.css'
 
-export default function Columns ( { object } ) {
+export default function Columns ( { object, id } ) {
   return(
-    <section className='columns' id='servicios' style={{ }}>
+    <section className='columns' id={id}>
       {
         object && object.map((x, i) => <div key={i}>
           <div>

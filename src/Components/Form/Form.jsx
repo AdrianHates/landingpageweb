@@ -1,6 +1,6 @@
 import './Form.css'
 import { useState } from 'react';
-export default function Form ( { object } ) {
+export default function Form ( { object, id } ) {
   const [nombre, setNombre] = useState('');
   const [email, setEmail] = useState('');
   const [telefono, setTelefono] = useState('');
@@ -46,7 +46,7 @@ export default function Form ( { object } ) {
   };
 
   return(
-    <section className='form' id='contactanos' style={{backgroundImage:`url(${object.url})`}}>
+    <section className='form' id={id} style={{backgroundImage:`url(${object.url})`}}>
       <div>
         <img alt='pointed' src='https://digitalmarketing.pe/wp-content/uploads/2020/11/contact_icon-white.png' />
         <p>{object.question}</p>

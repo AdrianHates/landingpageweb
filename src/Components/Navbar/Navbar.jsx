@@ -4,6 +4,8 @@ export default function Navbar ( { object } ) {
   
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState(null);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,7 +17,20 @@ export default function Navbar ( { object } ) {
       } else {
         setIsScrolled(false);
       }
-    };
+
+      const sections = object.list.map((x) => document.getElementById(x.href));
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionBottom = sectionTop + section.clientHeight;
+
+      if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
+        setActiveSection(section.id);
+      }
+    });
+    };  
+  
+    
 
     window.addEventListener('scroll', handleScroll);
 
@@ -23,7 +38,6 @@ export default function Navbar ( { object } ) {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  
   
   return(
     <header>
@@ -36,13 +50,13 @@ color:isScrolled?'black':'white', backgroundColor:isScrolled?'white':'transparen
       <div>
         {
           object && object.list.map((x,i)=> <div key={i}>
-            <a href={`#${x.href}`}>{x.element}</a>
+            <a href={`#${x.href}`} style={{color:activeSection===x.href?'coral':''}}>{x.element}</a>
           </div>
             )
         }
       </div>
       {
-        object && <a>{object.contact}</a>
+        object && <a href={`https://wa.me/+${object.contact.split(' ')[1]}`} style={{color:isScrolled?'black':'white'}}>{object.contact}</a>
       }
 
     </nav>

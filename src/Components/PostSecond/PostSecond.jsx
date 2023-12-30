@@ -1,7 +1,7 @@
 import "./PostSecond.css"
-export default function PostSecond ( { object } ) {
+export default function PostSecond ( { object, id } ) {
   return(
-    <section className='post-second' style={{backgroundImage:`url(${object.url})`}}>
+    <section className='post-second' id={id} style={{backgroundImage:`url(${object.url})`}}>
       <div>
       <div>{object.h1}</div>
       <p>{object.p}</p>

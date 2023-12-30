@@ -36,8 +36,10 @@ nav {
     cursor: pointer;
       font-weight: 500;
       font-family: 'Rubik';
+      text-decoration: none;
+      
     &:hover {
-      color:coral
+      color:coral !important
     }
   }
   

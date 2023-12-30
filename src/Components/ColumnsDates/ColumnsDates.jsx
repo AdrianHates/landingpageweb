@@ -1,7 +1,7 @@
 import './ColumnsDates.css'
-export default function ColumnsDates ( { object } ) {
+export default function ColumnsDates ( { object, id } ) {
   return(
-    <section className='columns-dates'>
+    <section className='columns-dates' id={id}>
       {
         object && object.map((x, i) => <div key={i}>
           <h1>{x.valor}{x.type==='%'?'%':''}</h1>

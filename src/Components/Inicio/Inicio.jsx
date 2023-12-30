@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import useTypingDelete from '../../CustomHooks/useTypingEffect'
 import './Inicio.css'
 
-export default function Inicio ( { object } ) {
+export default function Inicio ( { object, id } ) {
     const [text, setText] = useState(0)
     const { displayText, finishedTyping } = useTypingDelete(object.textoTipificado[text], 150)
     
@@ -12,7 +12,7 @@ export default function Inicio ( { object } ) {
       }
     }, [finishedTyping]);
     return(
-    <section className='inicio' id='inicio'>
+    <section className='inicio' id={id}>
       <div>
         {
           object && 

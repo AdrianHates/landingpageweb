@@ -29,7 +29,7 @@ const navbar = {
       href:'contactanos'
     }
   ],
-  contact: 'Llámanos: 987445450'
+  contact: 'Llámanos: 914315964'
 }
 
 const inicio = {
@@ -61,7 +61,7 @@ const columns = [
 
 const post = {
   h4: 'CREAMOS TU CAMINO AL ÉXITO',
-  h2:'Más de 10 Años y 200 Clientes',
+  h2:'Más de 2 Años y 50 Clientes',
   h3:'Diseñamos el Sitio Web que necesitas',
   p: 'Contamos con la experiencia y los profesionales más capacitados para brindarte un servicio integral de Marketing Digital y Diseño Web que te permita diferenciarte en el mercado.',
   button: 'NOSOTROS'
@@ -115,6 +115,7 @@ const footer = {
   address: 'Lima, Perú',
   description: '© 2023 — Developer Freelance - Perú - Herless Ramos'
 }
+
 const wS = '51914315964'
 const bubbleWrap = true
 
@@ -124,12 +125,12 @@ function App() {
     <>
       <Navbar object={navbar} />
       <main>
-        <Inicio object={inicio} />
-        <Columns object={columns} />
+        <Inicio object={inicio} id={navbar.list[0].href}/>
+        <Columns object={columns} id={navbar.list[1].href} />
         <Post object={post} />
         <PostSecond object={postSecond} />
         <ColumnsDates object={columnsDates} />
-        <Form object={form} />
+        <Form object={form} id={navbar.list[2].href}/>
       </main>
       <WS object={wS} />
       <BubbleWrap object={bubbleWrap} />

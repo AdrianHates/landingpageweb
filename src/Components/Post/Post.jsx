@@ -1,8 +1,8 @@
 import './Post.css'
 
-export default function Post ( { object } ) {
+export default function Post ( { object, id } ) {
   return(
-    <section className='post'>
+    <section className='post' id={id}>
       <div>
         <img alt='' src='https://digitalmarketing.pe/wp-content/uploads/2020/11/website_traffic.png' />
       </div>
