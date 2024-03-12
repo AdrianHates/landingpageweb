@@ -5,35 +5,69 @@ footer {
   gap: 2rem;
   background-color: #0D183F;
   font-family: 'Rubik';
-  > div:first-of-type {
+
+  >div:first-of-type {
     display: flex;
     border-bottom: .1px solid rgba(255, 255, 255, 0.1);
     padding-bottom: 2rem;
     color: white;
     gap: 2rem;
-    > div:first-of-type {
+
+    >div:first-of-type {
       display: flex;
       gap: 1rem;
       align-items: center;
-      > img {
+
+      >img {
         width: 32px;
         height: 40px;
       }
-      
+
 
     }
-    > div:nth-of-type(2) {
+
+    >div:nth-of-type(2) {
       display: flex;
       gap: 1rem;
       align-items: center;
-      > img {
+
+      >img {
         width: 30px;
         height: 30px;
       }
     }
-    
+
   }
-  > div:nth-of-type(2) {
+
+  >div:nth-of-type(2) {
     color: #8188B9
+  }
+}
+
+@media (max-width:640px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 1.5rem;
+
+    >div:first-of-type {
+      display: flex;
+      flex-direction: column;
+
+      >div:first-of-type {
+
+        >img {}
+
+
+      }
+
+      >div:nth-of-type(2) {
+
+        >img {}
+      }
+
+    }
+
+    >div:nth-of-type(2) {}
   }
 }

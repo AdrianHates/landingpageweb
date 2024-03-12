@@ -64,7 +64,9 @@ const post = {
   h2:'Más de 2 Años y 50 Clientes',
   h3:'Diseñamos el Sitio Web que necesitas',
   p: 'Contamos con la experiencia y los profesionales más capacitados para brindarte un servicio integral de Marketing Digital y Diseño Web que te permita diferenciarte en el mercado.',
-  button: 'NOSOTROS'
+  button: 'NOSOTROS',
+  href: '51914315964',
+
 }
 const postSecond = {
   url: 'https://digitalmarketing.pe/wp-content/uploads/2022/06/agencia-digital-marketing-diseno-de-paginas-web.png',
@@ -73,7 +75,8 @@ const postSecond = {
   p: 'Deseas saber lo necesario para potenciar tu negocio en el menor tiempo posible con tu web?',
   email: 'kurono1807@gmail.com',
   phone: '914 315 964',
-  button: 'CONTÁCTANOS'
+  button: 'CONTÁCTANOS',
+  href: '51914315964',
   
 }
 
@@ -135,7 +138,7 @@ function App() {
       <WS object={wS} />
       <BubbleWrap object={bubbleWrap} />
       <Footer object={footer} />
-
+      
     </>
   )
 }

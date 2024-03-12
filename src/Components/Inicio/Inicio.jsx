@@ -25,7 +25,7 @@ export default function Inicio ( { object, id } ) {
           object && <p>{object.p}</p>
         }
         {
-          object && <button>{object.button}</button>
+          object && <a href={`https://wa.me/+51914315964`}>{object.button}</a>
         }
       </div>
       

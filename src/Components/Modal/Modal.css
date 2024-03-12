@@ -1,0 +1,75 @@
+.modal-overlay {
+  position: fixed;
+  z-index: 999;
+  background-color: transparent;
+  width: 100%;
+  top: 0;
+  animation: fadeInToLeft 300ms ease-out;
+  /*Modificar style de Modal*/
+  > div {
+    > div {
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      > div {        
+        padding: 0 4rem;
+
+        > div {
+          cursor: pointer;
+          font-weight: 500;
+          font-family: 'Rubik';
+          > a {
+            text-decoration: none;
+            color: unset
+          }
+            &:hover {
+            color:coral
+          }
+        }  
+        > a {
+          cursor: pointer;
+            font-weight: 500;
+            font-family: 'Rubik';
+            text-decoration: none;
+            
+          &:hover {
+            color:coral !important
+          }
+        }
+      }
+    }
+  }
+ 
+  & button {
+    right: 0;
+    position: absolute;
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
+
+.fade-out {
+  animation: fadeOutToLeft 300ms ease-out
+}
+
+@keyframes fadeOutToLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes fadeInToLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

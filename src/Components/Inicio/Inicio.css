@@ -8,28 +8,31 @@
   background: url("https://d33wubrfki0l68.cloudfront.net/5c71bc45356f2b550ac87b19eb115007e5b0953b/78d8d/static/waves_violet-37d9022b34fe32b9a566104ee1b0b8e9.jpg") no-repeat center center;
   background-size: cover;
 
-  > div {
+  >div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    > div {
+
+    >div {
       text-align: center;
       background: linear-gradient(75deg, #FF4C6C, #FA9D4D 80%);
       font-size: 92px;
-      font-family: 'Montserrat', sans-serif;    
+      font-family: 'Montserrat', sans-serif;
       font-weight: 700;
       height: 210px;
       background-clip: text;
       -webkit-background-clip: text;
-      color: transparent;    
+      color: transparent;
     }
-    > p {
+
+    >p {
       color: white;
       font-size: 18px;
     }
-    > button {
+
+    >a {
       font-family: "Rubik", sans-serif;
       line-height: 1;
       font-size: 15.5px;
@@ -38,28 +41,55 @@
       border: none;
       border-radius: 3px;
       animation: pulse-blue 2s infinite;
+      background-color: white;
+      text-decoration: none;
+      color: black;
+
       &:hover {
         background-color: rgba(86, 52, 230, 0.7);
         color: white;
       }
     }
   }
-  
+
 }
 
 
 @media (max-width: 900px) {
   .inicio {
-     
-    > div {
+
+    >div {
       gap: 0rem;
-      > div {        
+
+      >div {
         font-size: 70px;
       }
-      > p {
+
+      >p {
         padding: 4rem;
         font-size: 18px;
-      }    
-    }    
+      }
+    }
   }
+}
+
+@media (max-width: 640px) {
+  .inicio {
+    >div {
+      >div {
+        font-size: 45px;
+      }
+
+      >p {
+        padding: 2rem;
+        padding-top: 0;
+      }
+
+      >a {
+        &:hover {}
+      }
+    }
+
+  }
+
 }

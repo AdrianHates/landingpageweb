@@ -7,9 +7,9 @@ export default function PostSecond ( { object, id } ) {
       <p>{object.p}</p>
       <p>{object.email}</p>
       <a>{object.phone}</a>
-      <button className='button-design-01'>
+      <a href={`https://wa.me/+${object.href}`} className='button-design-01'>
         {object.button}
-      </button>
+      </a>
       </div>
       <img alt='post' src={object.img} />
     </section>

@@ -25,17 +25,18 @@
       font-size: 18px;
       
     }
-    > a {
+    > a:first-of-type {
       font-size: 25px;
       font-weight: 600;
       &:hover {
         color: rgb(63, 63, 63)
       }
     }
-    > button {
+    > a:nth-of-type(2) {
       align-self: start;
       background-color: #FC7D59;
       color: white;
+      text-decoration: none;
       &:hover {
         background-color:#FE5C65;
 
@@ -80,6 +81,38 @@
 @media (max-width: 900px) {
   .post-second {
     flex-direction: column;
+    > div {
+      
+      > div {
+        font-size: 40px;
+
+      }
+      > p {
+        
+      }
+      > a {
+        
+        &:hover {
+        }
+      }
+      > button {
+       
+        &:hover {
+  
+        }
+      }
+    }
+    > img {
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
+  
+}
+
+@media (max-width: 640px) {
+  .post-second {
+    padding: 100px 1.5rem;
     > div {
       
       > div {

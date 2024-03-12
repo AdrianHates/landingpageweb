@@ -12,7 +12,7 @@ export default function Post ( { object, id } ) {
           <h2>{object.h2}</h2>
           <h3>{object.h3}</h3>
           <p>{object.p}</p>
-          <button>{object.button}</button>
+          <a href={`https://wa.me/+${object.href}`}>{object.button}</a>
         </div>
       }
       

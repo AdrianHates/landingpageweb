@@ -32,6 +32,15 @@ nav {
     }    
     
   }
+  > button {
+    display: none;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+    font-weight: 1000;
+    cursor: pointer;
+  } 
   > a {
     cursor: pointer;
       font-weight: 500;
@@ -45,23 +54,26 @@ nav {
   
 }
 
-header {
-  > button {
-    display: none;
-    background-color: orange;
-    position: absolute;
-    left: 5px;
-    top: 5px;
-    padding: 10px 15px;
-  } 
-}
 @media (max-width: 900px) {
-  header {
+  
+  nav {
+    > div {
+      display: none;
+    }
     > button {
       display: flex;
-    } 
+    }
   }
+}
+
+@media (max-width: 550px) {
+  
   nav {
-    display: none;
+    > img {
+      display: none;
+    }
+    > button {
+      display: flex;
+    }
   }
 }

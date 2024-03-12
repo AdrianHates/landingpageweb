@@ -36,9 +36,11 @@
       font-size: 18px;
       
     }
-    > button {
+    > a {
       margin: 1rem 0;
+      cursor: pointer;
       align-self: self-start;
+      text-decoration: none;
       padding: 12px 24px;
       background-color: white;
       border-radius: 5px;
@@ -65,6 +67,36 @@
       padding: 0 4rem;
       > img {
         width: 100%;
+      }
+    }
+    & > div:last-of-type {
+      
+      > h4 {
+  
+      }
+      > h2 {
+      }
+      > h3 {
+        
+      }
+      > p {
+        
+      }
+      > button {
+        
+        &:hover {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .post {
+    margin: 0 1.5rem;
+
+    & > div:first-of-type {
+      > img {
       }
     }
     & > div:last-of-type {
